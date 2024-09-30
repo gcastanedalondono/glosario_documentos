@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var whatsappButtons = document.querySelectorAll('.whatsapp-btn');
     whatsappButtons.forEach(function(button) {
         button.addEventListener('click', function() {
-            window.open('https://wa.me/573046780036', '_blank'); // Reemplaza con tu número de WhatsApp
+            window.open('https://wa.me/573185357421', '_blank'); // Reemplaza con tu número de WhatsApp
         });
     });
 });
