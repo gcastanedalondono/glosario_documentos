@@ -91,6 +91,9 @@ header {
         margin-top: 10px;
     }
     
+    .parrafo_video_g{
+       color:blue;
+    }
   
   
    .logo {
@@ -589,6 +592,10 @@ header {
     text-align: center; /* Centra el texto dentro de los elementos de la lista */
   }
   
+  .video_inicial{
+    padding: 25px;
+  }
+
   }
   
   
