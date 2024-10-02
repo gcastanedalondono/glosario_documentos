@@ -280,7 +280,7 @@ header {
          flex-wrap: wrap;
          position: relative;
          padding: 5px;
-         margin-left: 10px;
+         margin-left: 0px;
          margin-top: -5px;
   
     }
@@ -563,11 +563,11 @@ header {
   
   .short_parrafo{
   
-    font-size: 0,8rem;
+    font-size: 0,6rem;
     width:100%;
     text-align:center;
     padding: 0,7rem;
-    line-height: 1.2rem;
+    line-height: 1rem;
     margin-right: 10px;
     display: block;
   
