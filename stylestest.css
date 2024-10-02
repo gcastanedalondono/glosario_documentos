@@ -292,9 +292,9 @@ header {
       display:block;
       margin-left: auto;
       margin-right: auto;
-      height: 180px;
-      width: 130px; 
-      margin-top: 20px;
+      height: 170px;
+      width: 125px; 
+      margin-top: 15px;
       
     
     }
@@ -347,7 +347,7 @@ header {
      }
      .breslevlogo{
       display:block;
-      margin-top: 40px;
+      margin-top: 20px;
       justify-content: center;
       
       
