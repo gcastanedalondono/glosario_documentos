@@ -274,13 +274,13 @@ header {
     .contenedor_home{
       
         border: 0,3 rem solid black;
-         width: 80%;
+         width: 100%;
          align-items: center;
          display: flex;
          flex-wrap: wrap;
          position: relative;
          padding: 5px;
-         margin-left: 20px;
+         margin-left: 10px;
          margin-top: -5px;
   
     }
@@ -564,9 +564,9 @@ header {
   .short_parrafo{
   
     font-size: 0,8rem;
-    width:80%;
+    width:100%;
     text-align:center;
-    padding: 1rem;
+    padding: 0,7rem;
     line-height: 1.2rem;
     margin-right: 10px;
     display: block;
@@ -594,7 +594,7 @@ header {
   }
   
   .video_inicial{
-    padding: 15px;
+    padding: 10px;
     margin-right:10px;
   }
 
