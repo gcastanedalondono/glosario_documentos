@@ -563,11 +563,11 @@ header {
   
   .short_parrafo{
   
-    font-size: 0,4rem;
-    width:80%;
+    font-size: 0,3rem;
+    width:75%;
     text-align:center;
-    padding: 0,4rem;
-    line-height: 0,7rem;
+    padding: 0,2rem;
+    line-height: 0,5rem;
     margin-right: 25px;
     display: block;
   
