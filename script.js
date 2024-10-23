@@ -4,6 +4,7 @@ menuHamIcon.addEventListener("click", toggleMobileMenu);
 
 function toggleMobileMenu() {
   mobileMenu.classList.toggle("inactive");
+  
 }
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 
-.gallery {
+.gallery /* estilo para la parte de la tienda */ {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -349,6 +349,8 @@ nav {
     padding: 8px;
     z-index: 1000;
     overflow: visible;
+  
+    
   }
 
   .mobile-menu a {
