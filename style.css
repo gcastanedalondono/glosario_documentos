@@ -264,8 +264,9 @@ nav {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding: 5px;
-    margin-left: 0px;
+    padding: 7px;
+    margin-left: 5px;
+    margin-right: 7px;
     margin-top: -5px;
   }
 
