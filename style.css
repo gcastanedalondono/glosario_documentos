@@ -259,15 +259,16 @@ nav {
 
   .contenedor_home {
    
-    width: 90%;
+    width: 85%;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     padding: 7px;
-    margin-left: 5px;
-    margin-right: 10px;
+    margin-left: 4px;
+    margin-right: 15px;
     margin-top: -5px;
+    line-height: 1,8;
   }
 
   .breslevlogo img {
@@ -590,7 +591,19 @@ nav {
     width: 100%;
   }
 
-  
+  .contenedor_home {
+   
+    width: 98%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 7px;
+    margin-left: 4px;
+    margin-right: 15px;
+    margin-top: -5px;
+    line-height:1.8;
+  }
 
   .titulo {
     color: #ecc440;
