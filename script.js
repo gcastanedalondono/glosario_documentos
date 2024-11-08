@@ -26,6 +26,15 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+const podcast=document.querySelector("icon-bnt cloud");
+podcast.addEventListener("mouseover", () =>{
+    podcast.backgroundColor="blue";
+});
+
+container.addEventListener("mouseout", () =>{
+    container.style.backgroundColor="red";
+});
+
 
 
 
