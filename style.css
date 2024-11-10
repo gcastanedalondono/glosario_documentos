@@ -596,6 +596,7 @@ nav {
   .button_blog{
     display: block;
     align-items: center;
+    font-size: large;
   }
 }
 
@@ -1074,5 +1075,6 @@ nav {
 .button_blog{
   display: block;
   align-items: center;
+  font-size: large;
 }
 }
