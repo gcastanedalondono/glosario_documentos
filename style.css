@@ -648,7 +648,7 @@ nav {
     margin-top: 5px;
   }
 
-  .parashalogo img{
+  .logo img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -767,6 +767,16 @@ nav {
     unicode-bidi: isolate;
     text-align: center;
     font-size: 25px;
+
+  }
+
+  
+  .parashalogo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    margin-top: 8px;
 
   }
 }
