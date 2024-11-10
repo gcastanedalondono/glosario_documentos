@@ -587,6 +587,16 @@ nav {
     align-items: center;
     font-weight: bold;
   }
+
+  .contenedor_button{
+    
+    align-self: center;
+
+  }
+  .button_blog{
+    display: block;
+    align-items: center;
+  }
 }
 
 /*estilos en Desktop*/
@@ -779,7 +789,7 @@ nav {
     margin-top: 8px;
 
   }
-}
+
 
 /*.parrafo {
 
@@ -1051,6 +1061,18 @@ nav {
   margin-top: 10px;
 }
 
+
 .parrafo_centrado {
   text-align: center;
+}
+
+.contenedor_button{
+    
+  align-self: center;
+
+}
+.button_blog{
+  display: block;
+  align-items: center;
+}
 }
