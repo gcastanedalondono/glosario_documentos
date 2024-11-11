@@ -544,7 +544,7 @@ nav {
   .playlist-item {
     background-color: #f0f0f0;
     /* Fondo para los elementos de la lista */
-    padding: 15px;
+    padding: 10px;
     /* Espacio interno en los elementos de la lista */
     border-radius: 5px;
     /* Bordes redondeados en los elementos de la lista */
@@ -578,7 +578,7 @@ nav {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 
   }
 
@@ -625,6 +625,8 @@ nav {
     margin-top: -5px;
     line-height:1.8;
   }
+
+  
 
   .titulo {
     color: #ecc440;
@@ -778,7 +780,7 @@ nav {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 
   }
 
@@ -919,7 +921,7 @@ nav {
   margin-left: 30px;
 }
 
-.playlist-container {
+.t-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   /* Ajusta el tamaño de las columnas según el espacio disponible */
@@ -931,7 +933,7 @@ nav {
 
 .playlist-item {
   align-items: center;
-  display: block;
+  display: block ;
   font-size: 1rem;
   background-color: #f0f0f0;
   /* Color de fondo para los elementos */
@@ -939,7 +941,7 @@ nav {
   /* Borde para los elementos */
   border-radius: 8px;
   /* Bordes redondeados */
-  padding: 16px;
+  padding: 8px;
   /* Espacio interno del elemento */
   text-align: center;
   /* Centra el texto horizontalmente */
@@ -947,15 +949,18 @@ nav {
   /* Sombra para darle un poco de profundidad */
 }
 
-.playlist-container2 {
+.playlist-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   /* Dos columnas de igual tamaño */
-  gap: 16px;
+  gap: 30px;
   /* Espacio entre los elementos */
   padding: 16px;
   /* Espacio alrededor del contenedor */
 }
+
+
+    
 
 .playlist-item2 {
   background-color: #f0f0f0;
