@@ -272,7 +272,16 @@ nav {
   }
 
   .contenedor_blog{
-    
+
+    margin-top: -200px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    gap: 30px;
+    align-items: center; 
+    height: 100vh;
+
+
   }
 
   .breslevlogo img {
@@ -630,7 +639,11 @@ nav {
     line-height:1.8;
   }
 
-  
+  .contenedor_blog{
+    display: flex;
+    justify-content: space-around;
+  }
+
 
   .titulo {
     color: #ecc440;
