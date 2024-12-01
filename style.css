@@ -572,9 +572,10 @@ nav {
   .blog_item {
     background-color: #f0f0f0;
     /* Fondo para los elementos de la lista */
-    padding: 10px;
+    padding: 20px;
     /* Espacio interno en los elementos de la lista */
     border-radius: 5px;
+    height: 6dvh;
     /* Bordes redondeados en los elementos de la lista */
     width: 100%;
     /* Ocupar el ancho disponible dentro del contenedor */
@@ -747,6 +748,23 @@ nav {
     /* Ajusta el padding del botón de compra */
   }
 
+
+  .blog_item{
+
+  flex: 1; /* Hace que cada item ocupe el mismo ancho */
+  margin: 0 40px; /* Opcional: espacio horizontal entre los elementos */
+  padding: 70px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  height: 300px;
+
+
+
+
+
+  }
   .fb {
     width: 100px;
     height: 100px;
