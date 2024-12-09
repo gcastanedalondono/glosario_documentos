@@ -36,6 +36,9 @@ container.addEventListener("mouseout", () =>{
     container.style.backgroundColor="red";
 });
 
-
+document.getElementById('blog_item1').addEventListener('click', function() {
+    // Redirigimos al usuario a 'otraPagina.html' al hacer clic
+    window.location.href = 'dicen_nuestros_sabios.html';  // Cambia 'otraPagina.html' por la página de destino
+  });
 
 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirigir con div</title>
+</head>
+<body>
+
+  <!-- Div que redirige al hacer clic -->
+  <div id="miDiv" style="width: 300px; height: 100px; background-color: lightblue; text-align: center; line-height: 100px; cursor: pointer;">
+    Haz clic aquí para ir a otra página
+  </div>
+
+  <script>
+    // Seleccionamos el div con el id 'miDiv'
+    document.getElementById('miDiv').addEventListener('click', function() {
+      // Redirigimos al usuario a 'otraPagina.html' al hacer clic
+      window.location.href = 'dicen_nuestros_sabios.html';  // Cambia 'otraPagina.html' por la página de destino
+    });
+  </script>
+
+</body>
+</html>
