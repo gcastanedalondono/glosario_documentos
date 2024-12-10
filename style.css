@@ -569,6 +569,15 @@ nav {
     /* Centra el texto dentro de los elementos de la lista */
   }
 
+  .ancla_blog{
+    text-decoration: none;
+    color: black;
+  }
+
+  .image_blog{
+    display: none;
+  }
+
   #blog_item1 {
     background-color: #f0f0f0;
     /* Fondo para los elementos de la lista */
@@ -835,6 +844,11 @@ nav {
         color: black;
       }
 
+      .image_blog{
+        margin-top: 10px;
+        width: 170px;
+        height: 190px;
+      }
 
   .fb {
     width: 100px;
