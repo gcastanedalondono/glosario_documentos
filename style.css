@@ -583,6 +583,8 @@ nav {
     /* Máximo ancho de los elementos de la lista */
     text-align: center;
     /* Centra el texto dentro de los elementos de la lista */
+    text-decoration:none;
+
   }
 
   #blog_item2 {
@@ -599,6 +601,7 @@ nav {
     /* Máximo ancho de los elementos de la lista */
     text-align: center;
     /* Centra el texto dentro de los elementos de la lista */
+    text-decoration:none;
   }
 
   #blog_item3 {
@@ -615,8 +618,12 @@ nav {
     /* Máximo ancho de los elementos de la lista */
     text-align: center;
     /* Centra el texto dentro de los elementos de la lista */
+    text-decoration:none;
   }
 
+  .ancla_blog{
+    text-decoration: none;
+  }
   .video_inicial {
     padding: 10px;
     margin-right: 10px;
@@ -791,6 +798,7 @@ nav {
   text-align: center;
   box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
   height: 300px;
+  text-decoration:none;
 
   }
 
@@ -804,6 +812,7 @@ nav {
     text-align: center;
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
     height: 300px;
+    text-decoration:none;
   
     }
 
@@ -817,7 +826,13 @@ nav {
       text-align: center;
       box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
       height: 300px;
+      text-decoration:none;
     
+      }
+
+      .ancla_blog{
+        text-decoration: none;
+        color: black;
       }
 
 
