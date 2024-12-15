@@ -1,0 +1,983 @@
+header {
+    background-color: black;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  header,
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+  }
+  
+  .gallery /* estilo para la parte de la tienda */ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centra los elementos en la galerÃ­a */
+    padding: 20px;
+  }
+  
+  .item {
+    width: 150px;
+    /* TamaÃ±o base del elemento */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .item-title {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #buy-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .parrafo_video_g {
+    color: blue;
+  }
+  
+  .logo {
+    width: 500px;
+    height: 140px;
+  }
+  
+  .inactive {
+    display: none;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+  
+  .color_lista {
+    color: blue;
+  }
+  
+  .fuente {
+    color: #ecc440;
+  }
+  
+  .menu {
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    color: white;
+    padding: 0 24px;
+  }
+  
+  .navbar-left ul,
+  .navbar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-left {
+    display: flex;
+  }
+  
+  .navbar-left ul {
+    margin-left: 12px;
+  }
+  
+  .navbar-left ul li a,
+  .navbar-right ul li a {
+    text-decoration: none;
+  
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .icon-bnt {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: x-large;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .icon-bnt > a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .icon-bnt:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  .icon-bnt.facebook {
+    color: #1877f2;
+  }
+  
+  .icon-bnt.youtube {
+    color: #ff0000;
+  }
+  
+  .icon-bnt.whatsapp {
+    color: #25d366;
+  }
+  
+  .icon-bnt.cloud {
+    color: #f36721;
+  }
+  
+  .cart {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Esto hace que el elemento sea circular */
+    overflow: hidden;
+  }
+  
+  /*display:block;
+        margin-top: 30px;
+        justify-content: center;
+     /*estilos en mobile*/
+  
+  @media (max-width: 641px) {
+    .main_title {
+      color: black;
+      text-align: center;
+      font-size: large;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding: 15px;
+      font-size: 40px;
+    }
+  
+    .small_title {
+      color: black;
+      text-align: center;
+      font-size: large;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding: 15px;
+      font-size: 28px;
+    }
+  
+    .item {
+      width: 120px;
+      /* Ajusta el tamaÃ±o para pantallas mÃ¡s pequeÃ±as */
+    }
+  
+    .modal-content {
+      width: 90%;
+      /* Aumenta el ancho del modal en pantallas pequeÃ±as */
+    }
+  
+    .close {
+      font-size: 24px;
+      /* Ajusta el tamaÃ±o del botÃ³n de cierre */
+    }
+  
+    .parrafo_home {
+      font-size: 0.9rem;
+      width: 80%;
+      text-align: center;
+      padding: 0, 5rem;
+      line-height: 1.3rem;
+      margin: 1px;
+    }
+  
+    .contenedor_home {
+      border: 0, 3 rem solid black;
+      width: 100%;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      padding: 5px;
+      margin-left: 0px;
+      margin-top: -5px;
+    }
+  
+    .breslevlogo img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 110px;
+      margin-top: 8px;
+    }
+  
+    .video_container {
+      align-items: center;
+      border: 0, 3 rem solid black;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      padding: 5px;
+      margin-left: 30px;
+      width: 100%;
+    }
+  
+    .titulo {
+      color: #ecc440;
+      text-align: center;
+      font-size: large;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding: 10px;
+    }
+  
+    .semititulo {
+      color: black;
+      text-align: center;
+  
+      margin-left: 15px;
+      margin-right: 15px;
+      padding: 8px;
+      font-size: 20px;
+    }
+  
+    .navbar-left {
+      display: none;
+    }
+  
+    .breslevlogo {
+      display: block;
+      margin-top: 10px;
+      justify-content: center;
+    }
+  
+    .img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 240px;
+      width: 240px;
+      margin-top: 20px;
+    }
+  
+    .guia_estudio {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 160px;
+      width: 140%px;
+      margin-top: 20px;
+    }
+  
+    .guia_estudio img {
+      display: block;
+      width: 120px;
+    }
+  
+    .libros_guia img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 250px;
+      width: 120px;
+      margin-top: 10px;
+    }
+  
+    .mobile-menu {
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      padding: 8px;
+      z-index: 1000;
+      overflow: visible;
+    }
+  
+    .mobile-menu a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      /* margin-bottom: 24px; */
+    }
+  
+    .mobile-menu ul {
+      padding: 0;
+      margin: 12px 0 0;
+      list-style: none;
+    }
+  
+    .mobile-menu ul:nth-child(1) {
+      border-bottom: 1px solid white;
+    }
+  
+    .mobile-menu ul li {
+      margin-bottom: 8px;
+    }
+  
+    .container {
+      border: 0, 3 rem solid black;
+  
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      padding: 50px;
+    }
+  
+    .videodonacion {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 340px;
+      width: 340px;
+      margin-top: 50px;
+      left: -20px;
+    }
+  
+    .fb {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .contacto {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 150px;
+      width: 300px;
+      margin-top: 55px;
+  
+      left: -20px;
+    }
+  
+    .linkfb {
+      margin-bottom: -20px;
+    }
+  
+    .fb {
+      color: black;
+      text-decoration: none;
+    }
+  
+    .contacto h1 {
+      font-size: x-large;
+    }
+  
+    .link {
+      font-size: x-large;
+      color: black;
+      text-decoration: none;
+      position: relative;
+      top: -30px;
+      margin-left: 20px;
+      margin-bottom: -20px;
+    }
+  
+    .contenedor {
+      width: 80%;
+      margin: 0 auto;
+      align-items: center;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+  
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      /* Evita el scroll horizontal */
+    }
+  
+    .lista_guia {
+      margin-top: 5px;
+      list-style-type: none;
+      /* Elimina los puntos de la lista */
+      padding: 10px;
+      display: grid;
+      justify-content: center;
+      /* Centra horizontalmente */
+      align-items: center;
+      margin-bottom: 35px;
+    }
+  
+    .lista {
+      margin: 10px 10px;
+      /* Espaciado entre elementos de la lista */
+    }
+  
+    .menu_lista {
+      text-decoration: none;
+    }
+  
+    .contenedor_guia {
+      margin-top: 50px;
+    }
+  
+    .contenedor_video {
+      display: flex;
+      flex-direction: column;
+      /* Alinea los hijos en columna */
+      align-items: center;
+      /* Centra horizontalmente */
+      justify-content: center;
+      /* Centra verticalmente */
+      height: 100vh;
+      /* Ocupar toda la altura de la ventana */
+      padding: 20px;
+      /* Agrega algo de espacio interno */
+    }
+  
+    .video_natan {
+      text-align: center;
+      /* Centra el texto dentro del div */
+    }
+  
+    .playlist-container {
+      display: flex;
+      flex-direction: column;
+      /* Alinea los elementos en columna */
+      align-items: center;
+      /* Centra horizontalmente los elementos */
+      gap: 10px;
+      /* Espacio entre los elementos de la lista */
+    }
+  
+    .short_parrafo {
+      font-size: 0, 3rem;
+      width: 65%;
+      text-align: center;
+      padding: 0, 1rem;
+      line-height: 0, 4rem;
+      margin-right: 25px;
+      display: block;
+    }
+  
+    .subtitulo {
+      font-size: 1.3rem;
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      line-height: 1.4rem;
+      margin: 10px;
+      display: block;
+    }
+  
+    .playlist-item {
+      background-color: #f0f0f0;
+      /* Fondo para los elementos de la lista */
+      padding: 15px;
+      /* Espacio interno en los elementos de la lista */
+      border-radius: 5px;
+      /* Bordes redondeados en los elementos de la lista */
+      width: 100%;
+      /* Ocupar el ancho disponible dentro del contenedor */
+      max-width: 300px;
+      /* MÃ¡ximo ancho de los elementos de la lista */
+      text-align: center;
+      /* Centra el texto dentro de los elementos de la lista */
+    }
+  
+    .video_inicial {
+      padding: 10px;
+      margin-right: 10px;
+    }
+  
+    .parrafito {
+      text-align: center;
+      align-items: center;
+      font-weight: bold;
+    }
+  }
+  
+  /*estilos en Desktop*/
+  
+  @media (min-width: 642px) {
+    .video_container {
+      position: absolute;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .titulo {
+      color: #ecc440;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: none;
+    }
+  
+    .container {
+      position: absolute;
+      margin: 0 auto;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      margin-bottom: 12px;
+      height: 200px;
+    }
+  
+    .breslevlogo img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 150px;
+      width: 150px;
+      margin-top: 5px;
+    }
+  
+    .videodonacion {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 250px;
+      width: 250px;
+      margin-top: 55px;
+      left: -20px;
+    }
+  
+    .lista_guia_estudio {
+      margin-top: 15px;
+    }
+  
+    .video_inicial {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 320px;
+      height: 100px;
+      padding: 0px;
+      align-self: center;
+    }
+  
+    .item {
+      width: 100px;
+      /* Ajusta aÃºn mÃ¡s el tamaÃ±o para pantallas muy pequeÃ±as */
+    }
+  
+    .modal-content {
+      width: 85%;
+      /* Ajusta el ancho del modal para pantallas muy pequeÃ±as */
+    }
+  
+    .close {
+      font-size: 20px;
+      /* Ajusta el tamaÃ±o del botÃ³n de cierre para pantallas muy pequeÃ±as */
+    }
+  
+    #buy-button {
+      padding: 8px;
+      /* Ajusta el padding del botÃ³n de compra */
+    }
+  
+    .fb {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .contacto {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 400px;
+      width: 600px;
+      margin-top: 55px;
+  
+      left: -20px;
+    }
+  
+    .link {
+      font-size: x-large;
+      margin-left: 20px;
+      position: relative;
+      top: -30px;
+      text-decoration: none;
+      color: black;
+    }
+  
+    .redes {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .parrafo_home {
+      font-size: 1.05rem;
+      width: 85%;
+      text-align: justify;
+      padding: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    .parrafito {
+      text-align: center;
+      align-items: center;
+      font-weight: bold;
+    }
+  
+    .parrafo {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      unicode-bidi: isolate;
+    }
+  
+    .parrafo_video {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      unicode-bidi: isolate;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+  
+  /*.parrafo {
+  
+        font-size: 1.1rem;
+        width:90%;
+  
+        padding: 1rem;
+        line-height: 1.4rem;
+        margin: 20px;
+        text-align: center;
+        display: block;
+        }*/
+  
+  .short_parrafo {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    /*padding: 1rem;*/
+    line-height: 1.4rem;
+    margin: 10px;
+  }
+  
+  .subtitulo {
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    /*padding: 1rem;*/
+    line-height: 1.4rem;
+    margin: 10px;
+  }
+  
+  .guia_estudio img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 190px;
+    width: 370px;
+    margin-top: 20px;
+  }
+  
+  .main_title {
+    color: black;
+    text-align: center;
+    
+    font-weight: bold;
+    font-size: 2.3em;
+    
+  }
+  
+  .semititulo {
+    color: black;
+    text-align: center;
+  
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 2px;
+    font-size: 18px;
+  }
+  
+  .contenedor {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .libros_guia img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: 140px;
+    margin-top: 10px;
+  }
+  
+  .lista_guia {
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+  }
+  
+  .lista {
+    margin: 10px 10px;
+    /* Espaciado entre elementos de la lista */
+  }
+  
+  .menu_lista {
+    text-decoration: none;
+  }
+  
+  .contenedor_video {
+    display: block;
+    align-items: center;
+    /* Alinea los elementos verticalmente en el centro */
+    height: 100vh;
+    /* AsegÃºrate de que el contenedor tenga una altura definida */
+  }
+  
+  .video_natan {
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente si se usa con flexbox */
+    margin: 20px;
+  }
+  
+  .small_title {
+    color: black;
+    text-align: center;
+    font-size: large;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+    font-size: 28px;
+  }
+  
+  .playlist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    /* Ajusta el tamaÃ±o de las columnas segÃºn el espacio disponible */
+    gap: 30px;
+    /* Espacio entre los elementos de la grilla */
+    padding: 16px;
+    /* Espacio alrededor del contenedor */
+  }
+  
+  .playlist-item {
+    align-items: center;
+    display: block;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    /* Color de fondo para los elementos */
+    border: 1px solid #ddd;
+    /* Borde para los elementos */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    padding: 16px;
+    /* Espacio interno del elemento */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra para darle un poco de profundidad */
+  }
+  
+  .playlist-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas de igual tamaÃ±o */
+    gap: 16px;
+    /* Espacio entre los elementos */
+    padding: 16px;
+    /* Espacio alrededor del contenedor */
+  }
+  
+  .playlist-item2 {
+    background-color: #f0f0f0;
+    /* Color de fondo para los elementos */
+    border: 1px solid #ddd;
+    /* Borde para los elementos */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    padding: 16px;
+    /* Espacio interno del elemento */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra para darle un poco de profundidad */
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .item {
+    width: 150px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #lista_video {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .item-title {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    /* Limita el ancho mÃ¡ximo de la imagen */
+    max-height: 40vh;
+    /* Limita la altura mÃ¡xima de la imagen */
+    object-fit: contain;
+    /* Mantiene la relaciÃ³n de aspecto sin recortar */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #buy-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .parrafo_centrado {
+    text-align: center;
+  }
