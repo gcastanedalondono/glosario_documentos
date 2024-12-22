@@ -1000,8 +1000,8 @@ nav {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 350px;
-  
+  height: auto;
+  width: 100%px;
   margin-top: 10px;
 }
 
