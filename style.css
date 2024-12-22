@@ -370,8 +370,8 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 250px;
-    width: 120px;
+    height: 300px;
+    width: 200px;
     margin-top: 10px;
   }
 
@@ -1001,9 +1001,11 @@ nav {
   margin-left: auto;
   margin-right: auto;
   height: 350px;
-  width: 140px;
+  
   margin-top: 10px;
 }
+
+
 
 .lista_guia {
   list-style-type: none;
