@@ -671,6 +671,14 @@ nav {
     align-self: center;
 
   }
+  .home_button{
+    display: block;
+    align-items: center;
+    font-size:1.1rem;
+    margin-left: 25px;
+
+  }
+
   .button_blog{
     display: block;
     align-items: center;
@@ -1216,6 +1224,16 @@ nav {
   align-self: center;
 
 }
+
+.home_button{
+  display: block;
+  align-items: center;
+  font-size:1.1rem;
+  margin-left: 25px;
+
+}
+
+
 .button_blog{
   display: block;
   align-items: center;
