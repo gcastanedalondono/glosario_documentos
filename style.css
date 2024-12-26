@@ -361,9 +361,8 @@ nav {
     margin-top: 20px;
   }
 
-  .guia_estudio img {
-    display: block;
-    width: 100px;
+  .guia_estudio{
+    display:none;
   }
 
   .libros_guia img {
