@@ -352,14 +352,7 @@ nav {
     margin-top: 20px;
   }
 
-  .guia_estudio {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 160px;
-    width: 140%px;
-    margin-top: 20px;
-  }
+  
 
   .guia_estudio{
     display:none;
