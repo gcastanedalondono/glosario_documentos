@@ -853,7 +853,7 @@ nav {
 
       flex: 1; /* Hace que cada item ocupe el mismo ancho */
       margin: 0 40px; /* Opcional: espacio horizontal entre los elementos */
-      padding:50px;
+      padding:40px;
       background-color: #f0f0f0;
       border-radius: 5px;
       text-align: center;
