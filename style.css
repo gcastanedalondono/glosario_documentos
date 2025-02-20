@@ -591,7 +591,7 @@ nav {
   #blog_item1 {
     background-color: #f0f0f0;
     /* Fondo para los elementos de la lista */
-    padding: 20px;
+    padding: 10px;
     /* Espacio interno en los elementos de la lista */
     border-radius: 5px;
     height: 10dvh;
@@ -870,8 +870,8 @@ nav {
 
       .image_blog{
         margin-top: 10px;
-        width: 170px;
-        height: 190px;
+        width: 125px;
+        height: 140px;
       }
 
   .fb {
