@@ -681,6 +681,20 @@ nav {
     align-items: center;
   }
 
+  .parrafito3{
+    text-align: center;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .parrafito4{
+    text-align: center;
+    align-items: center;
+    font-style: italic;
+  }
+  
+
   .contenedor_button{
     
     align-self: center;
@@ -925,6 +939,19 @@ nav {
   .parrafito2{
     text-align: center;
     align-items: center;
+  }
+
+  .parrafito3{
+    text-align: center;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .parrafito4{
+    text-align: center;
+    align-items: center;
+    font-style: italic;
   }
 
   .parrafo {
