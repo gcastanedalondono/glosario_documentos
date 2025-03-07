@@ -25,6 +25,36 @@ nav {
   padding: 20px;
 }
 
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #000;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  background-color: #f2f2f2;
+}
+
+td:hover {
+  background-color: #ddd;
+}
+
+
 .item {
   width: 150px;
   /* Tamaño base del elemento */
