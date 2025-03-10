@@ -26,35 +26,6 @@ nav {
 }
 
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-table, th, td {
-  border: 1px solid #000;
-}
-
-th, td {
-  padding: 10px;
-  text-align: center;
-}
-
-th {
-  background-color: black;
-  color: white;
-}
-
-td {
-  background-color: #f2f2f2;
-}
-
-td:hover {
-  background-color: #ddd;
-}
-
-
 .item {
   width: 150px;
   /* Tamaño base del elemento */
@@ -262,6 +233,37 @@ nav {
     padding: 15px;
     font-size: 28px;
   }
+
+/* por acá va la parte de la tabla */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #000;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+td {
+  background-color: #f2f2f2;
+}
+
+td:hover {
+  background-color: #ddd;
+}
+
 
   .item {
     width: 120px;
@@ -749,6 +751,39 @@ nav {
 /*estilos en Desktop*/
 
 @media (min-width: 642px) {
+
+/* por acá va la parte de la tabla */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #000;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+td {
+  background-color: #f2f2f2;
+}
+
+td:hover {
+  background-color: #ddd;
+}
+ /*aquí termina la parte de la tabla*/
+
+
   .video_container {
     position: absolute;
     margin: 0 auto;
